@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32;
 
@@ -14,10 +7,6 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
 {
     public partial class FormAdd : Form
     {
-        RegistryKey registryKey =
-            Registry.LocalMachine.OpenSubKey(
-                "SYSTEM\\CurrentControlSet\\Services\\Dnscache\\Parameters\\DohWellKnownServers",true);
-
         public FormAdd()
         {
             InitializeComponent();
@@ -25,6 +14,10 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
+            var registryKey =
+                Registry.LocalMachine.OpenSubKey(
+                    "SYSTEM\\CurrentControlSet\\Services\\Dnscache\\Parameters\\DohWellKnownServers", true);
+
             if (Uri.TryCreate(textBoxURL.Text, UriKind.Absolute, out var uri) &&
                 IPAddress.TryParse(textBoxIP.Text, out var ipAddress))
             {
@@ -36,6 +29,11 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             {
                 MessageBox.Show("Invalid IP address or URL template. ");
             }
+        }
+
+        private void textBoxURL_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) buttonAdd_Click(sender, e);
         }
     }
 }

@@ -81,6 +81,7 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.textBoxURL.Name = "textBoxURL";
             this.textBoxURL.Size = new System.Drawing.Size(360, 27);
             this.textBoxURL.TabIndex = 5;
+            this.textBoxURL.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxURL_KeyDown);
             // 
             // textBoxIP
             // 
