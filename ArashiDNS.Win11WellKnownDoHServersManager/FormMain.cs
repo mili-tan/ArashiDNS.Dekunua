@@ -36,5 +36,11 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
                 listView.Items.Add(li);
             }
         }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            new FormAdd().ShowDialog();
+            listFlash();
+        }
     }
 }
