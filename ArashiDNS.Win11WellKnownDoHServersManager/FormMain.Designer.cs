@@ -29,6 +29,7 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.listView = new System.Windows.Forms.ListView();
             this.columnIP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnUrl = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -109,6 +110,7 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.listView);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormMain";
             this.Text = "ArashiDNS WellKnown DoH Servers Manager for Windows 11";
