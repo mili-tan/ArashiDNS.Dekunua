@@ -53,6 +53,7 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.listView.TabIndex = 0;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
+            this.listView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listView_KeyDown);
             // 
             // columnIP
             // 
