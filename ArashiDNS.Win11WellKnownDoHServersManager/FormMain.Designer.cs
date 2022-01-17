@@ -1,7 +1,7 @@
 ﻿
 namespace ArashiDNS.Win11WellKnownDoHServersManager
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -32,6 +32,9 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.listView = new System.Windows.Forms.ListView();
             this.columnIP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnUrl = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonDel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView
@@ -46,7 +49,7 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.listView.Location = new System.Drawing.Point(12, 13);
             this.listView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(858, 527);
+            this.listView.Size = new System.Drawing.Size(858, 508);
             this.listView.TabIndex = 0;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
@@ -62,16 +65,50 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.columnUrl.Text = "URL Template";
             this.columnUrl.Width = 700;
             // 
-            // Form1
+            // buttonAdd
+            // 
+            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonAdd.Location = new System.Drawing.Point(93, 528);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(75, 30);
+            this.buttonAdd.TabIndex = 1;
+            this.buttonAdd.Text = "Add";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            // 
+            // buttonDel
+            // 
+            this.buttonDel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonDel.Location = new System.Drawing.Point(12, 528);
+            this.buttonDel.Name = "buttonDel";
+            this.buttonDel.Size = new System.Drawing.Size(75, 30);
+            this.buttonDel.TabIndex = 2;
+            this.buttonDel.Text = "Delete";
+            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(670, 528);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 30);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Import from online list";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(882, 553);
+            this.ClientSize = new System.Drawing.Size(882, 570);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonDel);
+            this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.listView);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.Text = "ArashiDNS WellKnown DoH Servers Manager for Windows 11";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -83,6 +120,9 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
         private System.Windows.Forms.ListView listView;
         private System.Windows.Forms.ColumnHeader columnIP;
         private System.Windows.Forms.ColumnHeader columnUrl;
+        private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Button buttonDel;
+        private System.Windows.Forms.Button button1;
     }
 }
 
