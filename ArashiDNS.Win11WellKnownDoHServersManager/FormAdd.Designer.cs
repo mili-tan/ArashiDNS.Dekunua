@@ -30,10 +30,10 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelUrl = new System.Windows.Forms.Label();
             this.textBoxURL = new System.Windows.Forms.TextBox();
             this.textBoxIP = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelIP = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -45,10 +45,10 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.labelUrl, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.textBoxURL, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.textBoxIP, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.labelIP, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 16);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -58,18 +58,18 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.tableLayoutPanel1.Size = new System.Drawing.Size(488, 69);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // label2
+            // labelUrl
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelUrl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 35);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "URL Template:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelUrl.AutoSize = true;
+            this.labelUrl.Location = new System.Drawing.Point(3, 34);
+            this.labelUrl.Name = "labelUrl";
+            this.labelUrl.Size = new System.Drawing.Size(116, 35);
+            this.labelUrl.TabIndex = 3;
+            this.labelUrl.Text = "URL Template:";
+            this.labelUrl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBoxURL
             // 
@@ -94,18 +94,18 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.textBoxIP.Size = new System.Drawing.Size(360, 27);
             this.textBoxIP.TabIndex = 4;
             // 
-            // label1
+            // labelIP
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelIP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 34);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "IP Address:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelIP.AutoSize = true;
+            this.labelIP.Location = new System.Drawing.Point(3, 0);
+            this.labelIP.Name = "labelIP";
+            this.labelIP.Size = new System.Drawing.Size(116, 34);
+            this.labelIP.TabIndex = 2;
+            this.labelIP.Text = "IP Address:";
+            this.labelIP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // buttonAdd
             // 
@@ -135,6 +135,7 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add Server";
+            this.Load += new System.EventHandler(this.FormAdd_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -144,8 +145,8 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelUrl;
+        private System.Windows.Forms.Label labelIP;
         private System.Windows.Forms.TextBox textBoxIP;
         private System.Windows.Forms.TextBox textBoxURL;
         private System.Windows.Forms.Button buttonAdd;

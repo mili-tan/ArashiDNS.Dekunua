@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+using System.Threading;
 using System.Windows.Forms;
 using Microsoft.Win32;
 
@@ -7,6 +8,8 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
 {
     public partial class FormAdd : Form
     {
+        bool isZh = Thread.CurrentThread.CurrentCulture.Name.Contains("zh");
+
         public FormAdd()
         {
             InitializeComponent();
@@ -27,13 +30,23 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             }
             else
             {
-                MessageBox.Show("Invalid IP address or URL template. ");
+                MessageBox.Show(isZh ? "无效的 IP 或 URL 模板。" : "Invalid IP address or URL template. ");
             }
         }
 
         private void textBoxURL_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) buttonAdd_Click(sender, e);
+        }
+
+        private void FormAdd_Load(object sender, EventArgs e)
+        {
+            if (isZh)
+            {
+                buttonAdd.Text = "添加";
+                labelIP.Text = "IP 地址：";
+                labelUrl.Text = "查询 URL 模板：";
+            }
         }
     }
 }

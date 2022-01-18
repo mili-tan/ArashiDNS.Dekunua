@@ -35,7 +35,7 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.columnUrl = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonImport = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView
@@ -89,16 +89,16 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.buttonDel.UseVisualStyleBackColor = true;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
-            // button1
+            // buttonImport
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(670, 528);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 30);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Import from online list";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonImport.Location = new System.Drawing.Point(670, 528);
+            this.buttonImport.Name = "buttonImport";
+            this.buttonImport.Size = new System.Drawing.Size(200, 30);
+            this.buttonImport.TabIndex = 3;
+            this.buttonImport.Text = "Import from online list";
+            this.buttonImport.UseVisualStyleBackColor = true;
+            this.buttonImport.Click += new System.EventHandler(this.buttonImport_Click);
             // 
             // FormMain
             // 
@@ -106,7 +106,7 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(882, 570);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonImport);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.listView);
@@ -128,7 +128,7 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
         private System.Windows.Forms.ColumnHeader columnUrl;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonDel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonImport;
     }
 }
 
