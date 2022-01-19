@@ -45,7 +45,6 @@ namespace ArashiDNS.Dekunua
                     {
                         registryKey.CreateSubKey(ipAddress.ToString());
                         registryKey.OpenSubKey(ipAddress.ToString(), true).SetValue("Template", uri.ToString());
-                        Close();
                     }
                     else
                     {

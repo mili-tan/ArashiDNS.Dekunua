@@ -41,7 +41,7 @@ namespace ArashiDNS.Dekunua
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.9164F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.0836F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
             this.tableLayoutPanel1.Controls.Add(this.buttonImport, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.comboBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelUrl, 0, 0);
@@ -54,7 +54,7 @@ namespace ArashiDNS.Dekunua
             // 
             // buttonImport
             // 
-            this.buttonImport.Location = new System.Drawing.Point(688, 3);
+            this.buttonImport.Location = new System.Drawing.Point(687, 3);
             this.buttonImport.Name = "buttonImport";
             this.buttonImport.Size = new System.Drawing.Size(75, 25);
             this.buttonImport.TabIndex = 0;
@@ -73,7 +73,7 @@ namespace ArashiDNS.Dekunua
             "https://cdn.jsdelivr.net/gh/mili-tan/ArashiDNS.Dekunua@main/DoH.list"});
             this.comboBox.Location = new System.Drawing.Point(112, 3);
             this.comboBox.Name = "comboBox";
-            this.comboBox.Size = new System.Drawing.Size(570, 23);
+            this.comboBox.Size = new System.Drawing.Size(569, 23);
             this.comboBox.TabIndex = 1;
             this.comboBox.Text = "https://gh.mili.one/github.com/mili-tan/ArashiDNS.Dekunua/blob/main/DoH.list";
             // 
