@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ArashiDNS.Win11WellKnownDoHServersManager
+namespace ArashiDNS.Dekunua
 {
     static class Program
     {

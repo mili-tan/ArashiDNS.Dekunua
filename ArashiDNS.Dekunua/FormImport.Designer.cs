@@ -1,5 +1,5 @@
 ﻿
-namespace ArashiDNS.Win11WellKnownDoHServersManager
+namespace ArashiDNS.Dekunua
 {
     partial class FormImport
     {

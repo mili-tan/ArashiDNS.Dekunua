@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EEFA3118-23B4-449F-93EB-82771ABC863A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ArashiDNS.Win11WellKnownDoHServersManager</RootNamespace>
-    <AssemblyName>ArashiDNS.Win11WellKnownDoHServersManager</AssemblyName>
+    <RootNamespace>ArashiDNS.Dekunua</RootNamespace>
+    <AssemblyName>ArashiDNS.Dekunua</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -110,6 +110,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">

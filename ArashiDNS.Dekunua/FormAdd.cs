@@ -4,7 +4,7 @@ using System.Threading;
 using System.Windows.Forms;
 using Microsoft.Win32;
 
-namespace ArashiDNS.Win11WellKnownDoHServersManager
+namespace ArashiDNS.Dekunua
 {
     public partial class FormAdd : Form
     {
