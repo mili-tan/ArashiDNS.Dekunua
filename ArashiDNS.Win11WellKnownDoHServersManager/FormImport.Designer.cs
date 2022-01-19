@@ -39,9 +39,9 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.77778F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.9164F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.0836F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
             this.tableLayoutPanel1.Controls.Add(this.buttonImport, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.comboBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelUrl, 0, 0);
@@ -49,12 +49,12 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(607, 32);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(773, 32);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // buttonImport
             // 
-            this.buttonImport.Location = new System.Drawing.Point(525, 3);
+            this.buttonImport.Location = new System.Drawing.Point(688, 3);
             this.buttonImport.Name = "buttonImport";
             this.buttonImport.Size = new System.Drawing.Size(75, 25);
             this.buttonImport.TabIndex = 0;
@@ -68,10 +68,14 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox.FormattingEnabled = true;
-            this.comboBox.Location = new System.Drawing.Point(119, 3);
+            this.comboBox.Items.AddRange(new object[] {
+            "https://gh.mili.one/github.com/mili-tan/ArashiDNS.Dekunua/blob/main/DoH.list",
+            "https://cdn.jsdelivr.net/gh/mili-tan/ArashiDNS.Dekunua@main/DoH.list"});
+            this.comboBox.Location = new System.Drawing.Point(112, 3);
             this.comboBox.Name = "comboBox";
-            this.comboBox.Size = new System.Drawing.Size(400, 23);
+            this.comboBox.Size = new System.Drawing.Size(570, 23);
             this.comboBox.TabIndex = 1;
+            this.comboBox.Text = "https://gh.mili.one/github.com/mili-tan/ArashiDNS.Dekunua/blob/main/DoH.list";
             // 
             // labelUrl
             // 
@@ -82,7 +86,7 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.labelUrl.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.labelUrl.Location = new System.Drawing.Point(3, 0);
             this.labelUrl.Name = "labelUrl";
-            this.labelUrl.Size = new System.Drawing.Size(110, 32);
+            this.labelUrl.Size = new System.Drawing.Size(103, 32);
             this.labelUrl.TabIndex = 2;
             this.labelUrl.Text = "List URL:";
             this.labelUrl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -91,7 +95,7 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 53);
+            this.ClientSize = new System.Drawing.Size(792, 53);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;

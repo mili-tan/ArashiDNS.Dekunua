@@ -115,7 +115,7 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormMain";
             this.ShowIcon = false;
-            this.Text = "ArashiDNS WellKnown DoH Servers Manager for Windows 11";
+            this.Text = "ArashiDNS.Dekunua - Well-known DoH Servers Manager for Windows 11";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 

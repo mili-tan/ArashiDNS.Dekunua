@@ -17,7 +17,7 @@ namespace ArashiDNS.Win11WellKnownDoHServersManager
             listFlash();
             if (isZh)
             {
-                Text = "ArashiDNS 适用于 Windows 11 的内置 DoH 服务器管理工具";
+                Text = "ArashiDNS.Dekunua - 适用于 Windows 11 的内置 DoH 服务器管理工具";
                 buttonAdd.Text = "添加";
                 buttonDel.Text = "删除";
                 buttonImport.Text = "从在线列表导入";
