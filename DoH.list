@@ -1,6 +1,8 @@
 https://doh.opendns.com/dns-query ,146.112.41.2
 https://ordns.he.net/dns-query ,74.82.42.42
 https://dns.twnic.tw/dns-query ,101.101.101.101
+https://wikimedia-dns.org/dns-query ,185.71.138.138
+https://dns.hinet.net/dns-query ,168.95.1.1
 https://private.canadianshield.cira.ca/dns-query ,149.112.121.10
 https://dns.adguard.com/dns-query ,94.140.15.15
 https://doh.pub/dns-query ,162.14.21.56
